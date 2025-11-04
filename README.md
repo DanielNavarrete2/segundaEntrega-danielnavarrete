@@ -5,10 +5,10 @@
 
 ## Cómo usar
 1. Clonar el repositorio:
-git clone https://github.com/DanielNavarrete2/segundaEntrega-danielnavarrete.git
+git clone https://github.com/DanielNavarrete2/segundaentrega-danielnavarrete.git
 
 2. Entrar a la carpeta del proyecto:
-cd segundaEntrega-danielnavarrete
+cd segundaentrega-danielnavarrete
 
 3. Instalar dependencias :
 npm install
