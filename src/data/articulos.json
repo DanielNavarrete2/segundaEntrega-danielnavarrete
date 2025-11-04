@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "img": "src/assets/imagenes-articulos/articulo1.webp",
+    "alt": "Top 10 discos de rock alternativo",
+    "title": "Top 10 discos de rock alternativo",
+    "description": "Discos que definieron el sonido del rock alternativo.",
+    "autor": "Daniel Navarrete",
+    "content": "Desde Nirvana hasta Radiohead, repasamos diez discos esenciales del rock alternativo. Cada uno de estos álbumes marcó un hito en la música de su época, con letras introspectivas, riffs memorables y una actitud que rompió con las normas del mainstream."
+  },
+  {
+    "id": 2,
+    "img": "src/assets/imagenes-articulos/articulo2.webp",
+    "alt": "Nuevo lanzamiento de Twenty One Pilots",
+    "title": "Nuevo lanzamiento de Twenty One Pilots: “Breach”",
+    "description": "El dúo estadounidense regresa con energía y nuevos sonidos.",
+    "autor": "Alejandro",
+    "content": "“Breach” combina intensidad emocional con producción madura y experimental. La banda aborda temas como la ansiedad, la fama y la conexión humana, mostrando evolución en su sonido y manteniendo la autenticidad que los caracteriza."
+  },
+  {
+    "id": 3,
+    "img": "src/assets/imagenes-articulos/articulo3.webp",
+    "alt": "5 canciones que no puedes dejar de escuchar este mes",
+    "title": "5 canciones que no puedes dejar de escuchar este mes",
+    "description": "Lo mejor de la música actual: indie y pop alternativo.",
+    "autor": "Navarrete",
+    "content": "Top Chile de Spotify con los temas más sonados este mes. Desde indie hasta pop alternativo, estas canciones reflejan las tendencias actuales y destacan tanto por su calidad musical como por la creatividad de los artistas."
+  },
+  {
+    "id": 4,
+    "img": "src/assets/imagenes-articulos/articulo4.webp",
+    "alt": "La reinvención del grunge en la nueva generación",
+    "title": "La reinvención del grunge en la nueva generación",
+    "description": "El grunge sigue vivo con un sonido actualizado.",
+    "autor": "Barría",
+    "content": "Bandas jóvenes fusionan grunge con shoegaze y post-punk, retomando la crudeza de los 90 pero incorporando nuevas texturas y atmósferas. Este renacer demuestra que la rebeldía y la autenticidad del grunge siguen inspirando a nuevas generaciones."
+  },
+  {
+    "id": 5,
+    "img": "src/assets/imagenes-articulos/articulo5.webp",
+    "alt": "El poder del stoner rock",
+    "title": "El poder del stoner rock: riffs densos y energía desértica",
+    "description": "Riffs pesados y grooves hipnóticos del stoner rock.",
+    "autor": "Felipe Muñoz",
+    "content": "Exploramos raíces y exponentes del stoner rock psicodélico. Inspirado en los desiertos californianos y la psicodelia de los 70, este subgénero combina distorsión, lentitud y atmósferas densas que envuelven al oyente en un viaje sonoro único."
+  },
+  {
+    "id": 6,
+    "img": "src/assets/imagenes-articulos/articulo6.webp",
+    "alt": "Los clásicos del rock que siguen vivos",
+    "title": "Los clásicos del rock que siguen vivos",
+    "description": "Bandas legendarias que siguen conquistando nuevas generaciones.",
+    "autor": "Erwin González",
+    "content": "Metallica, Foo Fighters y Pearl Jam siguen llenando estadios y lanzando música relevante. Su legado demuestra cómo las bandas clásicas se adaptan a los cambios de la industria sin perder la esencia que las hizo icónicas."
+  }
+]

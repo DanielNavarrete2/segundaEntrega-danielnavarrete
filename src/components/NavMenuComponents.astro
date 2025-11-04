@@ -1,0 +1,16 @@
+---
+import { ItemMenu } from "../data/ItemMenu";
+---
+
+<nav class="bg-transparent">
+  <div class="flex flex-wrap ">
+    {ItemMenu.map((item) => (
+      <a 
+        href={item.href} 
+        class="boton-header" 
+      >
+        {item.texto}
+      </a>
+    ))}
+  </div>
+</nav>

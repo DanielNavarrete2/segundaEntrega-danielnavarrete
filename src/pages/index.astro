@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro"; // Ajusta esta ruta
+import HeroSection from "../components/HeroSection.astro";
+import Card from "../components/CardComponents.astro";
+import albumsData from "../data/albums.json";
+import Titulo from "../components/TituloComponents.astro";
+
+interface Album {
+  id: number;
+  titulo: string;
+  artista: string;
+  año: number;
+  imagen: string;
+}
+
+const albums: Album[] = albumsData;
+---
+
+<Layout title="Inicio">
+  <HeroSection />
+
+  <div class="container mx-auto py-16 px-4">
+    <h1 class="text-4xl font-semibold text-center mb-12">
+      Colección de Álbumes
+    </h1>
+
+    <!-- Carrusel (solo visible en móvil y tablet) -->
+    <div
+      class="flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide lg:hidden px-2"
+    >
+      {
+        albums.map((album) => (
+          <div class="snap-start min-w-[18rem] flex-shrink-0">
+            <Card
+              href={`/album/${album.id}/`}
+              img={album.imagen}
+              alt={`Portada de ${album.titulo} de ${album.artista}`}
+              title={album.artista}
+              subtitle={album.titulo}
+              detail="Ver detalles"
+            />
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Grid (solo visible en pantallas grandes) -->
+    <div class="hidden lg:grid grid-cols-4 gap-8 justify-items-center px-22">
+      {
+        albums.map((album) => (
+          <Card
+            href={`/album/${album.id}/`}
+            img={album.imagen}
+            alt={`Portada de ${album.titulo} de ${album.artista}`}
+            title={album.artista}
+            subtitle={album.titulo}
+            detail="Ver detalles"
+          />
+        ))
+      }
+    </div>
+  </div>
+</Layout>

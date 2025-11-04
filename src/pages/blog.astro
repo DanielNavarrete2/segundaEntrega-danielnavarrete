@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogCard from "../components/BlogCard.astro";
+import TituloComponents from "../components/TituloComponents.astro";
+import articulos from "../data/articulos.json";
+---
+
+<Layout title="Blog">
+  <div class="container mx-auto mb-10">
+    <div class="w-full my-6 flex items-center">
+      <TituloComponents
+        text="Últimos Artículos"
+        stilo="font-semibold text-black text-2xl"
+      />
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2  sm:gap-8">
+      {
+        articulos.map((article) => (
+          <BlogCard
+            img={article.img}
+            alt={article.alt}
+            title={article.title}
+            description={article.description}
+            autor={article.autor}
+            href={`/blog/${article.id}`}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Layout>

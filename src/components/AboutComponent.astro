@@ -1,0 +1,37 @@
+---
+import TituloComponents from '../components/TituloComponents.astro';
+import {Image} from "astro:assets"
+import ImagenAbout from "../assets/about1.webp"
+
+---
+<div class="flex items-center">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center p-12 m-20 gap-12">
+
+        <!-- Imagen / ilustración -->
+        <div class="w-full md:w-1/2 flex items-center justify-center">
+            <Image src={ImagenAbout} class="rounded-2xl shadow-2xl object-cover w-full max-h-[500px]" alt="About us"/>
+        </div>
+
+        <!-- Texto -->
+        <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 text-center md:text-left">
+            <TituloComponents text="Sobre Nosotros" stilo="mb-2" />
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                Bienvenido a nuestra página. Aquí compartimos nuestra pasión por la música, el arte y la creatividad.
+                Nuestro objetivo es brindar contenido de calidad y experiencias únicas a nuestra comunidad.
+            </p>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                Nos enfocamos en crear conexiones significativas y en mantenernos siempre a la vanguardia de las tendencias
+                digitales y culturales. Cada proyecto que emprendemos refleja nuestro compromiso con la excelencia.
+            </p>
+            <a
+                    href="/contact"
+                    class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+                Contáctanos
+            </a>
+        </div>
+
+    </div>
+</div>
+
+

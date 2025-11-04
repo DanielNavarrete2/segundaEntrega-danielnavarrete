@@ -1,0 +1,403 @@
+[
+  {
+    "id": 1,
+    "titulo": "Vol. 4",
+    "artista": "Black Sabbath",
+    "año": 1972,
+    "imagen": "/src/assets/imagenes/1.webp",
+    "canciones": [
+      "Wheels of Confusion / The Straightener",
+      "Tomorrow’s Dream",
+      "Changes",
+      "FX",
+      "Supernaut",
+      "Snowblind",
+      "Cornucopia",
+      "Laguna Sunrise",
+      "St. Vitus Dance",
+      "Under the Sun / Every Day Comes and Goes"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Nevermind",
+    "artista": "Nirvana",
+    "año": 1991,
+    "imagen": "/src/assets/imagenes/2.webp",
+    "canciones": [
+      "Smells Like Teen Spirit",
+      "In Bloom",
+      "Come as You Are",
+      "Breed",
+      "Lithium",
+      "Polly",
+      "Territorial Pissings",
+      "Drain You",
+      "Lounge Act",
+      "Stay Away",
+      "On a Plain",
+      "Something in the Way"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "OK Computer",
+    "artista": "Radiohead",
+    "año": 1997,
+    "imagen": "/src/assets/imagenes/3.webp",
+    "canciones": [
+      "Airbag",
+      "Paranoid Android",
+      "Subterranean Homesick Alien",
+      "Exit Music (For a Film)",
+      "Let Down",
+      "Karma Police",
+      "Fitter Happier",
+      "Electioneering",
+      "Climbing Up the Walls",
+      "No Surprises",
+      "Lucky",
+      "The Tourist"
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "The Colour and the Shape",
+    "artista": "Foo Fighters",
+    "año": 1997,
+    "imagen": "/src/assets/imagenes/4.webp",
+    "canciones": [
+      "Doll",
+      "Monkey Wrench",
+      "Hey, Johnny Park!",
+      "My Poor Brain",
+      "Wind Up",
+      "Up in Arms",
+      "My Hero",
+      "See You",
+      "Enough Space",
+      "February Stars",
+      "Everlong",
+      "Walking After You",
+      "New Way Home"
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Sabotage",
+    "artista": "Black Sabbath",
+    "año": 1975,
+    "imagen": "/src/assets/imagenes/5.webp",
+    "canciones": [
+      "Hole in the Sky",
+      "Don’t Start (Too Late)",
+      "Symptom of the Universe",
+      "Megalomania",
+      "Thrill of It All",
+      "Supertzar",
+      "Am I Going Insane (Radio)",
+      "The Writ"
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Blizzard of Ozz",
+    "artista": "Ozzy Osbourne",
+    "año": 1980,
+    "imagen": "/src/assets/imagenes/6.webp",
+    "canciones": [
+      "I Don’t Know",
+      "Crazy Train",
+      "Goodbye to Romance",
+      "Dee",
+      "Suicide Solution",
+      "Mr. Crowley",
+      "No Bone Movies",
+      "Revelation (Mother Earth)",
+      "Steal Away (The Night)"
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Led Zeppelin IV",
+    "artista": "Led Zeppelin",
+    "año": 1971,
+    "imagen": "/src/assets/imagenes/7.webp",
+    "canciones": [
+      "Black Dog",
+      "Rock and Roll",
+      "The Battle of Evermore",
+      "Stairway to Heaven",
+      "Misty Mountain Hop",
+      "Four Sticks",
+      "Going to California",
+      "When the Levee Breaks"
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "The Dark Side of the Moon",
+    "artista": "Pink Floyd",
+    "año": 1973,
+    "imagen": "/src/assets/imagenes/8.webp",
+    "canciones": [
+      "Speak to Me",
+      "Breathe (In the Air)",
+      "On the Run",
+      "Time",
+      "The Great Gig in the Sky",
+      "Money",
+      "Us and Them",
+      "Any Colour You Like",
+      "Brain Damage",
+      "Eclipse"
+    ]
+  },
+  {
+    "id": 9,
+    "titulo": "Ten",
+    "artista": "Pearl Jam",
+    "año": 1991,
+    "imagen": "/src/assets/imagenes/9.webp",
+    "canciones": [
+      "Once",
+      "Even Flow",
+      "Alive",
+      "Why Go",
+      "Black",
+      "Jeremy",
+      "Oceans",
+      "Porch",
+      "Garden",
+      "Deep",
+      "Release"
+    ]
+  },
+  {
+    "id": 10,
+    "titulo": "Dirt",
+    "artista": "Alice in Chains",
+    "año": 1992,
+    "imagen": "/src/assets/imagenes/10.webp",
+    "canciones": [
+      "Them Bones",
+      "Dam That River",
+      "Rain When I Die",
+      "Down in a Hole",
+      "Sickman",
+      "Rooster",
+      "Junkhead",
+      "Dirt",
+      "God Smack",
+      "Iron Gland",
+      "Hate to Feel",
+      "Angry Chair",
+      "Would?"
+    ]
+  },
+  {
+    "id": 11,
+    "titulo": "Master of Puppets",
+    "artista": "Metallica",
+    "año": 1986,
+    "imagen": "/src/assets/imagenes/11.webp",
+    "canciones": [
+      "Battery",
+      "Master of Puppets",
+      "The Thing That Should Not Be",
+      "Welcome Home (Sanitarium)",
+      "Disposable Heroes",
+      "Leper Messiah",
+      "Orion (Instrumental)",
+      "Damage, Inc."
+    ]
+  },
+  {
+    "id": 12,
+    "titulo": "Back in Black",
+    "artista": "AC/DC",
+    "año": 1980,
+    "imagen": "/src/assets/imagenes/12.webp",
+    "canciones": [
+      "Hells Bells",
+      "Shoot to Thrill",
+      "What Do You Do for Money Honey",
+      "Given the Dog a Bone",
+      "Let Me Put My Love Into You",
+      "Back in Black",
+      "You Shook Me All Night Long",
+      "Have a Drink on Me",
+      "Shake a Leg",
+      "Rock and Roll Ain't Noise Pollution"
+    ]
+  },
+  {
+    "id": 13,
+    "titulo": "Superunknown",
+    "artista": "Soundgarden",
+    "año": 1994,
+    "imagen": "/src/assets/imagenes/13.webp",
+    "canciones": [
+      "Let Me Drown",
+      "My Wave",
+      "Fell on Black Days",
+      "Mailman",
+      "Superunknown",
+      "Head Down",
+      "Black Hole Sun",
+      "Spoonman",
+      "Limo Wreck",
+      "The Day I Tried to Live",
+      "Kickstand",
+      "Fresh Tendrils",
+      "4th of July",
+      "Half",
+      "Like Suicide"
+    ]
+  },
+  {
+    "id": 14,
+    "titulo": "The Number of the Beast",
+    "artista": "Iron Maiden",
+    "año": 1982,
+    "imagen": "/src/assets/imagenes/14.webp",
+    "canciones": [
+      "Invaders",
+      "Children of the Damned",
+      "The Prisoner",
+      "22 Acacia Avenue",
+      "The Number of the Beast",
+      "Run to the Hills",
+      "Gangland",
+      "Hallowed Be Thy Name"
+    ]
+  },
+  {
+    "id": 15,
+    "titulo": "Californication",
+    "artista": "Red Hot Chili Peppers",
+    "año": 1999,
+    "imagen": "/src/assets/imagenes/15.webp",
+    "canciones": [
+      "Around the World",
+      "Parallel Universe",
+      "Scar Tissue",
+      "Otherside",
+      "Get on Top",
+      "Californication",
+      "Easily",
+      "Porcelain",
+      "Emit Remmus",
+      "I Like Dirt",
+      "This Velvet Glove",
+      "Savior",
+      "Purple Stain",
+      "Right on Time",
+      "Road Trippin'"
+    ]
+  },
+  {
+    "id": 16,
+    "titulo": "Rage Against the Machine",
+    "artista": "Rage Against the Machine",
+    "año": 1992,
+    "imagen": "/src/assets/imagenes/16.webp",
+    "canciones": [
+      "Bombtrack",
+      "Killing in the Name",
+      "Take the Power Back",
+      "Settle for Nothing",
+      "Bullet in the Head",
+      "Know Your Enemy",
+      "Wake Up",
+      "Fistful of Steel",
+      "Township Rebellion",
+      "Freedom"
+    ]
+  },
+  {
+    "id": 17,
+    "titulo": "Rust in Peace",
+    "artista": "Megadeth",
+    "año": 1990,
+    "imagen": "/src/assets/imagenes/17.webp",
+    "canciones": [
+      "Holy Wars... The Punishment Due",
+      "Hangar 18",
+      "Take No Prisoners",
+      "Five Magics",
+      "Poison Was the Cure",
+      "Lucretia",
+      "Tornado of Souls",
+      "Dawn Patrol",
+      "Rust in Peace... Polaris"
+    ]
+  },
+  {
+    "id": 18,
+    "titulo": "Siamese Dream",
+    "artista": "The Smashing Pumpkins",
+    "año": 1993,
+    "imagen": "/src/assets/imagenes/18.webp",
+    "canciones": [
+      "Cherub Rock",
+      "Quiet",
+      "Today",
+      "Hummer",
+      "Rocket",
+      "Disarm",
+      "Soma",
+      "Geek U.S.A.",
+      "Mayonaise",
+      "Spaceboy",
+      "Silverfuck",
+      "Sweet Sweet",
+      "Luna"
+    ]
+  },
+  {
+    "id": 19,
+    "titulo": "London Calling",
+    "artista": "The Clash",
+    "año": 1979,
+    "imagen": "/src/assets/imagenes/19.webp",
+    "canciones": [
+      "London Calling",
+      "Brand New Cadillac",
+      "Jimmy Jazz",
+      "Hateful",
+      "Rudie Can't Fail",
+      "Spanish Bombs",
+      "The Right Profile",
+      "Lost in the Supermarket",
+      "Clampdown",
+      "The Guns of Brixton",
+      "Wrong 'Em Boyo",
+      "Death or Glory",
+      "Koka Kola",
+      "The Card Cheat",
+      "Lover's Rock",
+      "Four Horsemen",
+      "I'm Not Down",
+      "Revolution Rock",
+      "Train in Vain (Stand by Me)"
+    ]
+  },
+  {
+    "id": 20,
+    "titulo": "Paranoid",
+    "artista": "Black Sabbath",
+    "año": 1970,
+    "imagen": "/src/assets/imagenes/20.webp",
+    "canciones": [
+      "War Pigs",
+      "Paranoid",
+      "Planet Caravan",
+      "Iron Man",
+      "Electric Funeral",
+      "Hand of Doom",
+      "Rat Salad",
+      "Fairies Wear Boots"
+    ]
+  }
+]  

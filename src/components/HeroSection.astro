@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import Img1 from "../assets/hero1.jpg";
+import Img2 from "../assets/hero2.webp";
+import Img3 from "../assets/hero3.jpg";
+import Img4 from "../assets/hero4.avif";
+const imgs = [Img1, Img2, Img3, Img4];
+---
+
+<div
+  class="relative max-w-5xl mx-auto overflow-hidden rounded-lg mt-10 px-4 sm:px-6"
+>
+  <!-- Carrusel -->
+  <div id="carrusel" class="flex transition-transform duration-500">
+    {
+      imgs.map((img) => (
+        <Image
+          src={img}
+          alt="imagen"
+          class="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] object-cover flex-shrink-0 rounded-lg"
+          width={1200}
+          height={400}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Botones -->
+  <button
+    id="prev"
+    class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 sm:px-3 rounded-full"
+  >
+    ❮
+  </button>
+  <button
+    id="next"
+    class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 sm:px-3 rounded-full"
+  >
+    ❯
+  </button>
+</div>
+
+<script>
+  const carrusel = document.getElementById("carrusel")!; // el ! indica que nunca es null
+  const prevBtn = document.getElementById("prev")!;
+  const nextBtn = document.getElementById("next")!;
+  let index = 0;
+
+  function moverCarrusel() {
+    carrusel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevBtn.onclick = function () {
+    index--;
+    if (index < 0) index = carrusel.children.length - 1;
+    moverCarrusel();
+  };
+
+  nextBtn.onclick = function () {
+    index++;
+    if (index >= carrusel.children.length) index = 0;
+    moverCarrusel();
+  };
+
+  setInterval(function () {
+    index++;
+    if (index >= carrusel.children.length) index = 0;
+    moverCarrusel();
+  }, 5000);
+</script>

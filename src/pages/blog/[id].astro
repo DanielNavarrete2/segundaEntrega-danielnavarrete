@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import articulos from "../../data/articulos.json";
+
+export async function getStaticPaths() {
+    return articulos.map((article) => ({
+        params: { id: article.id.toString() },
+        props: { article },
+    }));
+}
+
+const { article } = Astro.props;
+
+const pageTitle = article ? `${article.title} | Blog` : "Artículo no encontrado";
+
+
+---
+
+<Layout title={pageTitle}>
+    <article class="container mx-auto px-6 py-10 max-w-3xl">
+        <h1 class="text-3xl font-bold mb-4">{article.title}</h1>
+        <p class="text-gray-500 mb-4">Por {article.autor}</p>
+        <img src={`/${article.img}`} alt={article.alt} class="rounded-xl mb-6 shadow-md" />
+        <p class="text-lg leading-relaxed text-gray-800 text-justify">{article.content}</p>
+    </article>
+</Layout>

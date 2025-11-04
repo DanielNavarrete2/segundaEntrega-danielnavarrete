@@ -1,0 +1,81 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import albumsData from '../../data/albums.json';
+import LogoPlay from "../../assets/iconos/album-play.svg"
+
+export async function getStaticPaths() {
+  return albumsData.map((album) => ({
+    params: { id: album.id.toString() },
+    props: { album },
+  }));
+}
+
+const { album } = Astro.props;
+
+const pageTitle = album ? `${album.titulo} | ${album.artista}` : "Álbum no encontrado";
+
+---
+<Layout title={pageTitle}>
+  <div class="min-h-screen text-gray-800 py-10 px-4">
+    <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 2xl:px-76">
+
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-yellow-500 hover:text-gray-800 mb-8 transition"
+      >
+       
+        ← Volver
+      </a>
+
+      <!-- Contenido -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+        <!-- Izquierda -->
+        <div class="space-y-6">
+          <img
+            src={album.imagen}
+            alt={album.titulo}
+            class="rounded-xl border border-gray-200 shadow-md w-full aspect-square object-cover"
+          />
+
+          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex justify-around text-center">
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-wide">Año</p>
+              <p class="text-lg font-semibold">{album.año}</p>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-wide">Canciones</p>
+              <p class="text-lg font-semibold">{album.canciones.length}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Derecha -->
+        <div class="space-y-6">
+          <div>
+            <p class="text-sm uppercase text-indigo-500 font-medium mb-1">Álbum</p>
+            <h1 class="text-3xl md:text-4xl font-bold">{album.titulo}</h1>
+            <p class="text-lg md:text-xl text-gray-500">{album.artista}</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl shadow-sm">
+            <div class="p-4 border-b border-gray-100 flex items-center gap-2 bg-gray-50">
+              <Image src={LogoPlay} alt="" class=""/>
+              <h2 class="font-semibold text-gray-700">Lista de canciones</h2>
+            </div>
+
+            <div class="p-4 space-y-1 max-h-[60vh] overflow-y-auto">
+              {album.canciones.map((cancion, i) => (
+                <div class="flex items-center gap-3 px-3 py-2 rounded hover:bg-indigo-50 transition">
+                  <span class="w-6 text-indigo-500 font-medium">{i + 1}.</span>
+                  <p class="truncate">{cancion}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
